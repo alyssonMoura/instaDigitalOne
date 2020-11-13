@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+body{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243,243,243);
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 90vh;
+}
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:40%;
+}
+.phone img{
+  height: 40rem;
+}
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+.group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+.group:nth-child(1){
+  min-height: 19rem;
+}
+.logo{
+  height: 3rem;
+}
+
+.photo-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.photo-profile img{
+  height: 6rem;
+}
+
+.btn-login{
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+.btn-logout{
+  color: #0095f6;
+  margin-top: 1rem;
+
+}
+.not-account{
+  color: rgb(160, 160, 160);
+}
+
+.color-link{
+  color: #0095f6;
+}
+.get-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+.downloads{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.app-downloads{
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+.app-downloads:nth-child(1){
+  background-image: url('./images/app.png');
+}
+.app-downloads:nth-child(2){
+  background-image: url('./images/play.png');
+}
+
+@media (max-width:1024px){
+  .wrapper{
+    width: 90%;
+  }
+}
+@media (max-width:650px){
+  body{
+    background-color: #ffffff;
+  }
+  .wrapper{
+    width: 90%;
+  }
+  .phone{
+    display: none;
+  }
+  .login{
+    display: 100%;
+  }
+  .group{
+    border: 1px solid transparent;
+  }
+}
